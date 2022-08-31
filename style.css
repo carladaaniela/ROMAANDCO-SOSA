@@ -293,14 +293,6 @@ li a.active {
   background-color: white;
 }
 
-.register-Form {
-  height: 400px;
-}
-
-.logIN-form {
-  height: 100px;
-}
-
 .grid-shop {
   display: grid;
   grid-template-columns: 1fr;
