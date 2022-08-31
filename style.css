@@ -1,0 +1,932 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box; /*elementos que no se salen del contenedor*/
+  font-family: "Sen", sans-serif;
+}
+
+.font-abril {
+  font-family: "Abril Fatface", cursive;
+}
+.font-sent {
+  font-family: "Sen", sans-serif;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.tittleAnimation {
+  animation-name: zoom;
+  animation-duration: 1s;
+  animation-iteration-count: 4;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-delay: 0.25s;
+  text-align: center;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1.25, 1.25);
+  }
+}
+
+.bg-home {
+  background-image: url(./IMG/hdbg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-shop {
+  background-image: url(./IMG/hdbg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-locales {
+  background-image: url(./IMG/hdbg6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-servicios {
+  background-image: url(./IMG/hdbg7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-registro {
+  background-image: url(./IMG/hdbg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.div-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+.div-text h1 {
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.menu {
+  list-style: none;
+}
+
+header nav {
+  background-color: #e6e6e6;
+  height: 80px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+header nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+header nav ul li a {
+  color: black;
+  font-size: 18px;
+  padding: 7px 13px; /* arriba y abajo 7, izq y derecha 13*/
+  border-radius: 3px;
+}
+
+.enlaceLogo {
+  position: absolute;
+  padding: 8px 16px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.BarsIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.checkbtn {
+  float: right;
+  line-height: 100px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+li,
+li a:hover {
+  background-color: #e6e6e6;
+  transition: 0.5s;
+}
+
+.enlace {
+  padding-left: 20px;
+}
+header nav ul li a {
+  font-size: 16px;
+}
+
+.checkbtn {
+  display: block;
+}
+ul {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #e6e6e6;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+header nav ul li {
+  display: block;
+  margin: 50px 0;
+  line-height: 30px; /*espacion entre elementos */
+}
+header nav ul li a {
+  font-size: 20px;
+}
+li a:hover,
+li a.active {
+  background: none;
+}
+#check:checked ~ ul {
+  left: 0; /*que ya no este oculto, que se muestre*/
+}
+
+.grid-iconsHome {
+  width: 100%;
+  background-color: #d8d8d8;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-size: 10px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  border: none;
+  grid-row-gap: 2px;
+}
+
+.grid-iconsHome img {
+  height: 30px;
+  width: 30px;
+}
+
+.iframe {
+  height: 120px;
+  width: 250px;
+}
+
+.iframe-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8d8d8;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 100%;
+  height: 200px;
+}
+
+.flex-RegisterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+  height: 600px;
+  background-color: #dddad5;
+  padding: 8px 16px 8px 16px;
+  box-sizing: border-box;
+}
+
+.forms {
+  background-color: #f8f6f4;
+  padding: 8px 16px 8px 16px;
+  text-align: left;
+  color: black;
+  border: 1px solid black;
+  font-size: 14px;
+}
+
+.forms-tittle {
+  font-style: 12px;
+}
+
+.formsButtons {
+  /* Botones Formularios */
+  color: #c3cea3;
+  background: transparent;
+  border: 2px solid #c3cea3;
+  border-radius: 6px;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #c3cea3;
+  color: black;
+  position: center;
+  transition: #c3cea3 0.5s;
+}
+
+.formInput {
+  margin: 4px 8px;
+  height: 15px;
+  border: 1px solid black;
+}
+
+.formsButtons:hover {
+  /* Cambio de color en boton de formulario*/
+  border-color: black;
+  background-color: white;
+}
+
+.register-Form {
+  height: 400px;
+}
+
+.logIN-form {
+  height: 100px;
+}
+
+.grid-shop {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+  background-color: #d8d8d8;
+  padding: 8px 16px;
+}
+
+.grid-shop div p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.grid-shop div h1 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.grid-shopProducts {
+  width: 100px;
+  height: 140px;
+}
+
+.localesContent {
+  width: 100%;
+  background-color: #f8f6f4;
+  text-align: center;
+}
+
+.imgLocales {
+  height: 150px;
+  width: 150px;
+}
+
+.footerContent {
+  padding: 8px 16px 8px 16px;
+  background-color: #e6e6e6;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 15px;
+}
+
+.redes {
+  width: 25px;
+  height: 25px;
+}
+
+footer,
+div,
+a {
+  color: black;
+}
+
+/* aca es para tablet */
+@media screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box; /*elementos que no se salen del contenedor*/
+    font-family: "Sen", sans-serif;
+  }
+
+  .bg-home {
+    background-image: url(./IMG/hdbg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-shop {
+    background-image: url(./IMG/hdbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-locales {
+    background-image: url(./IMG/hdbg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-servicios {
+    background-image: url(./IMG/hdbg7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-registro {
+    background-image: url(./IMG/hdbg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+  }
+
+  .div-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    height: 650px;
+  }
+
+  .div-text h1 {
+    font-size: 60px;
+    font-weight: bolder;
+  }
+
+  .div-text p {
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .font-sent {
+    font-family: "Sen", sans-serif;
+  }
+
+  .font-abril {
+    font-family: "Abril Fatface", cursive;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    font-size: 40px;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    margin: 0 50px;
+  }
+
+  .iframe-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8d8d8;
+    font-weight: bolder;
+    font-size: 40px;
+    width: 100%;
+    height: 500px;
+  }
+  .iframe {
+    width: 700px;
+    height: 350px;
+  }
+
+  .grid-iconsHome {
+    /*muebles y texto - desktop */
+    background-color: #d8d8d8;
+    display: grid;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    border: none;
+    grid-column-gap: 5px 5px 5px;
+    grid-row-gap: 5px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .grid-iconsHome img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .grid-shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 500px 500px;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    background-color: #d8d8d8;
+    padding: 8px 16px;
+  }
+
+  .grid-shop div p {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .grid-shop div h1 {
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  .grid-shopProducts {
+    width: 250px;
+    height: 290px;
+  }
+
+  .flex-RegisterContainer {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #dddad5;
+  }
+
+  .forms {
+    background-color: #f8f6f4;
+    padding: 10px 45px 10px 45px;
+    text-align: left;
+    color: black;
+    border: 2px solid black;
+  }
+
+  .formsButtons {
+    /* Botones Formularios */
+    color: #c3cea3;
+    background: transparent;
+    border: 2px solid #c3cea3;
+    border-radius: 6px;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #c3cea3;
+    color: black;
+    position: center;
+    transition: #c3cea3 0.5s;
+  }
+
+  .formsButtons:hover {
+    /* Cambio de color en boton de formulario*/
+    border-color: black;
+    background-color: white;
+  }
+
+  html,
+  footer a {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .localesContent {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f8f6f4;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .imgLocales {
+    height: 400px;
+    width: 400px;
+  }
+
+  .localNames {
+    text-align: left;
+    font-family: "Abril Fatface" !important;
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  .tableDays,
+  th,
+  td {
+    /* Bordes de renglones de tablas */
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 5px solid #e6e6e6;
+  }
+
+  .footerContent {
+    background-color: #e6e6e6;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+  }
+}
+
+/* aca es para pc */
+@media screen and (min-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box; /*elementos que no se salen del contenedor*/
+    font-family: "Sen", sans-serif;
+  }
+
+  .bg-home {
+    background-image: url(./IMG/hdbg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-shop {
+    background-image: url(./IMG/hdbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-locales {
+    background-image: url(./IMG/hdbg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-servicios {
+    background-image: url(./IMG/hdbg7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-registro {
+    background-image: url(./IMG/hdbg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+  }
+
+  .div-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    height: 650px;
+  }
+
+  .div-text h1 {
+    font-size: 60px;
+    font-weight: bolder;
+  }
+
+  .div-text p {
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .font-sent {
+    font-family: "Sen", sans-serif;
+  }
+
+  .font-abril {
+    font-family: "Abril Fatface", cursive;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    font-size: 40px;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    margin: 0 50px;
+  }
+
+  .iframe-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8d8d8;
+    font-weight: bolder;
+    font-size: 40px;
+    width: 100%;
+    height: 500px;
+  }
+  .iframe {
+    width: 700px;
+    height: 350px;
+  }
+
+  .grid-iconsHome {
+    /*muebles y texto - desktop */
+    background-color: #d8d8d8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    border: none;
+    width: 100%;
+    height: 50%;
+  }
+
+  .grid-iconsHome img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .grid-shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 500px 500px;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    background-color: #d8d8d8;
+    padding: 8px 16px;
+  }
+
+  .grid-shop div p {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .grid-shop div h1 {
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  .grid-shopProducts {
+    width: 250px;
+    height: 290px;
+  }
+
+  .flex-RegisterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #dddad5;
+  }
+
+  .forms {
+    background-color: #f8f6f4;
+    padding: 10px 45px 10px 45px;
+    text-align: left;
+    color: black;
+    border: 2px solid black;
+  }
+
+  .formsButtons {
+    /* Botones Formularios */
+    color: #c3cea3;
+    background: transparent;
+    border: 2px solid #c3cea3;
+    border-radius: 6px;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #c3cea3;
+    color: black;
+    position: center;
+    transition: #c3cea3 0.5s;
+  }
+
+  .formsButtons:hover {
+    /* Cambio de color en boton de formulario*/
+    border-color: black;
+    background-color: white;
+  }
+
+  html,
+  footer a {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .localesContent {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f8f6f4;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .imgLocales {
+    height: 400px;
+    width: 400px;
+  }
+
+  .localNames {
+    text-align: left;
+    font-family: "Abril Fatface" !important;
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  .tableDays,
+  th,
+  td {
+    /* Bordes de renglones de tablas */
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 5px solid #e6e6e6;
+  }
+
+  .footerContent {
+    background-color: #e6e6e6;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+  }
+}
