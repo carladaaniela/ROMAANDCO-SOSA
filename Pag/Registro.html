@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css" />
 </head>
 
@@ -50,8 +51,8 @@
 
 
         <div class="div-text w-full">
-            <h1 class="font-abril tittleAnimation">¿Ya formas parte de nuestra comunidad?</h1>
-            <p class="font-sent">
+            <h1 class="font-abril tittleAnimation">¿Ya formas parte de nosotros?</h1>
+            <p class="font-sent big-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Odio perferendis sed et aut nostrum suscipit earum
                 commodi, velit incidunt hic neque iure, adipisci ea.
@@ -60,115 +61,116 @@
         </div>
     </div>
 
-    <section class="flex-RegisterContainer w-full">
-        <div>
-            <form class="forms font-sent" action="" method="post">
-                <p>
+    <div class="container-fluid bg-grey font-sent text-center">
+        <div class="row">
+            <div class="col-xl-6">
+                <form class="forms font-sent" action="" method="post">
                     <label for="Titulo">
                         <h1 class="forms-tittle">Sumate a nuestra comunidad!</h1>
                     </label>
-                </p>
-
-                <p>
-                    <label for="Nombre">Nombre</label>
-                    <input class="formInput" type="text" name="Nombre" />
-                </p>
-
-                <p>
-                    <label for="Apellido">Apellido</label>
-                    <input class="formInput" type="text" name="Apellido" />
-                </p>
-
-                <p>
-                    <label for="Genero">Genero</label>
-                <div>Masculino</div>
-                <input class="formInput" type="radio" name="Genero" value="Masculino" />
-                <div>Femenino</div>
-                <input class="formInput" type="radio" name="Genero" value="Femenino" />
-                <div>Sin Genero</div>
-                <input class="formInput" type="radio" name="Genero" value="NoGender" />
-                </p>
-
-                <p>
-                    <label for="Email">Email</label>
-                    <input class="formInput" type="email" name="Email" />
-                </p>
-
-                <p>
-                    <label for="Telefono">Telefono</label>
-                    <input class="formInput" type="number" name="Telefono" />
-                </p>
-
-                <p>
-                    <label for="Fecha de Nacimiento">Fecha de Nacimiento</label>
-                    <input class="formInput" type="date" name="Fecha de Nacimiento" />
-                </p>
-
-                <p>
-                    <label for="Contraseña">Contraseña</label>
-                    <input class="formInput" type="password" name="Contraseña" />
-                </p>
-
-                <p>
-                    <label for="Contraseña">Repita la Contraseña</label>
-                    <input class="formInput" type="password" name="Contraseña" />
-                </p>
-
-                <div>
-                    <p>Acepta los Terminos y Condiciones</p>
-                    <input class="formInput" type="checkbox" name="Acepta" value="1" />
-                </div>
 
 
-                <button class="formsButtons font-sent" type="submit" type="submit" name="Enviar Formulario"> Enviar Formulario</button>
-                <button class="formsButtons font-sent" type="reset" name="Limpiar Formulario">Limpiar Formulario</button>
+                    <div>
+                        <label for="Nombre">Nombre</label>
+                        <input class="formInput" type="text" name="Nombre" />
+                    </div>
 
-            </form>
+                    <div>
+                        <label for="Apellido">Apellido</label>
+                        <input class="formInput" type="text" name="Apellido" />
+                    </div>
+
+                    <div>
+                        <label for="Genero">Genero</label>
+                        <div>Masculino</div>
+                        <input class="formInput" type="radio" name="Genero" value="Masculino" />
+                        <div>Femenino</div>
+                        <input class="formInput" type="radio" name="Genero" value="Femenino" />
+                        <div>Sin Genero</div>
+                        <input class="formInput" type="radio" name="Genero" value="NoGender" />
+                    </div>
+
+                    <div>
+                        <label for="Email">Email</label>
+                        <input class="formInput" type="email" name="Email" />
+                    </div>
+
+                    <div>
+                        <label for="Telefono">Telefono</label>
+                        <input class="formInput" type="number" name="Telefono" />
+                    </div>
+
+                    <div>
+                        <label for="Fecha de Nacimiento">Fecha de Nacimiento</label>
+                        <input class="formInput" type="date" name="Fecha de Nacimiento" />
+                    </div>
+
+                    <div>
+                        <label for="Contraseña">Contraseña</label>
+                        <input class="formInput" type="password" name="Contraseña" />
+                    </div>
+
+                    <div>
+                        <label for="Contraseña">Repita la Contraseña</label>
+                        <input class="formInput" type="password" name="Contraseña" />
+                    </div>
+
+                    <div>
+                        <p>Acepta los Terminos y Condiciones</p>
+                        <input class="formInput" type="checkbox" name="Acepta" value="1" />
+                    </div>
+
+
+                    <button class="formsButtons font-sent" type="submit" type="submit" name="Enviar Formulario"> Enviar Formulario</button>
+                    <button class="formsButtons font-sent" type="reset" name="Limpiar Formulario">Limpiar Formulario</button>
+
+                </form>
+            </div>
+
+            <div class="col-xl-6">
+                <form class="forms font-sent logInform" action="" method="post">
+                    <h2 class="forms-tittle">O iniciá sesión...</h2>
+                    <div>
+                        <label for="Email">Email</label>
+                        <input class="formInput" type="email" name="Email" />
+                    </div>
+
+                    <div>
+                        <label for="Contraseña">Contraseña</label>
+                        <input class="formInput" type="password" name="Contraseña" />
+                    </div>
+
+
+                    <button class="formsButtons font-sent" type="submit"> Iniciar Sesion</button>
+                </form>
+            </div>
+
         </div>
-
-        <div>
-            <form class="forms font-sent w-full " action="" method="post">
-                <h2 class="forms-tittle">O iniciá sesión...</h2>
-                <p>
-                    <label for="Email">Email</label>
-                    <input class="formInput" type="email" name="Email" />
-                </p>
-
-                <p>
-                    <label for="Contraseña">Contraseña</label>
-                    <input class="formInput" type="password" name="Contraseña" />
-                </p>
-
-
-                <button class="formsButtons font-sent" type="submit"> Iniciar Sesion</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="font-sent footerContent">
-
-        <div><a target="_blank" tittle="Facebook" href="https://fb.com/">
-                <img class="redes" src="../IMG/fb.svg" alt="Facebook" />
-                <p>Seguinos en Facebook!</p>
-            </a>
-        </div>
-
-
-
-        <div><a target="_blank" title="Instagram" href="https://www.instagram.com/">
-                <img class="redes" src="../IMG/insta.svg" alt="Instagram" />
-                <p>Seguinos en Instagram!</p>
-            </a>
-        </div>
-
-
-
-        <div><a target="_blank" title="WhatsApp" href="https://web.whatsapp.com/">
-                <img class="redes" src="../IMG/wpp.svg" alt="WhatsApp" />
-                <p>Contactate con Nosotros!</p>
-            </a>
+    </div>
+    <footer class="container-fluid font-sent text-center bg-lightGrey">
+        <div class="row">
+            <div class="col-4">
+                <a target="_blank" tittle="Facebook" href="https://fb.com/">
+                    <img class="redes" src="../IMG/fb.svg" alt="Facebook" />
+                    <p>Seguinos en Facebook!</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a target="_blank" title="Instagram" href="https://www.instagram.com/">
+                    <img class="redes" src="../IMG/insta.svg" alt="Instagram" />
+                    <p>Seguinos en Instagram!</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a target="_blank" title="WhatsApp" href="https://web.whatsapp.com/">
+                    <img class="redes" src="../IMG/wpp.svg" alt="WhatsApp" />
+                    <p>Contactate con Nosotros!</p>
+                </a>
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

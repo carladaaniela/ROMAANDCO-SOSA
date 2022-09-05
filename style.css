@@ -6,6 +6,14 @@
   font-family: "Sen", sans-serif;
 }
 
+.bg-grey {
+  background-color: #d8d8d8;
+}
+
+.bg-lightGrey {
+  background-color: #e6e6e6;
+}
+
 .font-abril {
   font-family: "Abril Fatface", cursive;
 }
@@ -45,6 +53,7 @@
   background-position: center;
   width: 100%;
   height: 100%;
+  filter: grayscale(100);
 }
 
 .bg-shop {
@@ -55,6 +64,7 @@
   background-position: center;
   width: 100%;
   height: 100%;
+  filter: grayscale(100);
 }
 
 .bg-locales {
@@ -65,6 +75,7 @@
   background-position: center;
   width: 100%;
   height: 100%;
+  filter: grayscale(100);
 }
 
 .bg-servicios {
@@ -75,6 +86,7 @@
   background-position: center;
   width: 100%;
   height: 100%;
+  filter: grayscale(100);
 }
 
 .bg-registro {
@@ -85,6 +97,7 @@
   background-position: center;
   width: 100%;
   height: 100%;
+  filter: grayscale(100);
 }
 
 .div-text {
@@ -96,9 +109,20 @@
 }
 
 .div-text h1 {
-  font-size: 20px;
+  font-size: 17px;
   position: relative;
   z-index: 1;
+  font-weight: bolder;
+}
+
+.big-text {
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: black;
+  font-style: italic;
 }
 
 .menu {
@@ -129,6 +153,7 @@ header nav ul li a {
   font-size: 18px;
   padding: 7px 13px; /* arriba y abajo 7, izq y derecha 13*/
   border-radius: 3px;
+  text-decoration: none;
 }
 
 .enlaceLogo {
@@ -144,6 +169,7 @@ header nav ul li a {
 .BarsIcon {
   width: 40px;
   height: 40px;
+  margin-bottom: 16px;
 }
 
 .checkbtn {
@@ -169,6 +195,7 @@ li a:hover {
 }
 header nav ul li a {
   font-size: 16px;
+  text-decoration: none;
 }
 
 .checkbtn {
@@ -191,7 +218,9 @@ header nav ul li {
 }
 header nav ul li a {
   font-size: 20px;
+  text-decoration: none;
 }
+
 li a:hover,
 li a.active {
   background: none;
@@ -200,23 +229,17 @@ li a.active {
   left: 0; /*que ya no este oculto, que se muestre*/
 }
 
-.grid-iconsHome {
-  width: 100%;
-  background-color: #d8d8d8;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  font-size: 10px;
-  font-weight: 400;
-  color: black;
-  text-align: center;
-  border: none;
-  grid-row-gap: 2px;
+.furnitureIcons {
+  height: 80px;
+  width: 80px;
+  margin: 8px 8px 8px 8px;
 }
 
-.grid-iconsHome img {
-  height: 30px;
-  width: 30px;
+.furnitureIcons-text {
+  margin: 8px 8px 8px 8px;
+  font-size: 12px;
+  color: black;
+  font-weight: 400;
 }
 
 .iframe {
@@ -224,16 +247,10 @@ li a.active {
   width: 250px;
 }
 
-.iframe-cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #d8d8d8;
-  font-weight: bolder;
+.iframeTittle {
   font-size: 20px;
-  width: 100%;
-  height: 200px;
+  color: black;
+  font-weight: bold;
 }
 
 .flex-RegisterContainer {
@@ -250,11 +267,17 @@ li a.active {
 
 .forms {
   background-color: #f8f6f4;
-  padding: 8px 16px 8px 16px;
   text-align: left;
   color: black;
   border: 1px solid black;
   font-size: 14px;
+  padding: 8px 16px 8px 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.forms div {
+  margin-bottom: 4px;
 }
 
 .forms-tittle {
@@ -283,7 +306,7 @@ li a.active {
 
 .formInput {
   margin: 4px 8px;
-  height: 15px;
+  height: 17px;
   border: 1px solid black;
 }
 
@@ -293,64 +316,36 @@ li a.active {
   background-color: white;
 }
 
-.grid-shop {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 40px;
-  align-items: stretch;
-  justify-content: center;
-  text-align: center;
-  color: black;
-  font-weight: 400;
-  background-color: #d8d8d8;
-  padding: 8px 16px;
+.imgLocales {
+  height: 150px;
+  width: 150px;
+  margin: 8px 16px 8px 16px;
 }
 
-.grid-shop div p {
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.grid-shop div h1 {
-  font-weight: bolder;
-  font-size: 30px;
+.table-mobile {
+  width: 100%;
+  margin: 2px 4px 2px 4px;
+  padding: 2px 4px 2px 4px;
 }
 
 .grid-shopProducts {
   width: 100px;
-  height: 140px;
-}
-
-.localesContent {
-  width: 100%;
-  background-color: #f8f6f4;
-  text-align: center;
-}
-
-.imgLocales {
-  height: 150px;
-  width: 150px;
-}
-
-.footerContent {
-  padding: 8px 16px 8px 16px;
-  background-color: #e6e6e6;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  width: 100%;
   height: 100px;
-  font-size: 15px;
+  margin: 8px 16px 8px 16px;
 }
 
 .redes {
   width: 25px;
   height: 25px;
+  margin: 8px 8px 8px 8px;
 }
 
-footer,
-div,
-a {
+footer {
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
   color: black;
 }
 
@@ -364,6 +359,14 @@ a {
     font-family: "Sen", sans-serif;
   }
 
+  .bg-grey {
+    background-color: #d8d8d8;
+  }
+
+  .bg-lightGrey {
+    background-color: #e6e6e6;
+  }
+
   .bg-home {
     background-image: url(./IMG/hdbg3.jpg);
     background-repeat: no-repeat;
@@ -481,77 +484,20 @@ a {
     margin: 0 50px;
   }
 
-  .iframe-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #d8d8d8;
-    font-weight: bolder;
-    font-size: 40px;
-    width: 100%;
-    height: 500px;
-  }
   .iframe {
     width: 700px;
     height: 350px;
   }
 
-  .grid-iconsHome {
-    /*muebles y texto - desktop */
-    background-color: #d8d8d8;
-    display: grid;
-    font-size: 25px;
-    font-weight: 400;
-    color: black;
-    text-align: center;
-    border: none;
-    grid-column-gap: 5px 5px 5px;
-    grid-row-gap: 5px;
-    width: 100%;
-    height: 50%;
-  }
-
-  .grid-iconsHome img {
+  .furnitureIcons {
     height: 100px;
     width: 100px;
   }
 
-  .grid-shop {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70px 500px 500px;
-    align-items: stretch;
-    justify-content: center;
-    text-align: center;
+  .furnitureIcons-text {
+    margin: 8px 8px 8px 8px;
+    font-size: 20px;
     color: black;
-    font-weight: 400;
-    background-color: #d8d8d8;
-    padding: 8px 16px;
-  }
-
-  .grid-shop div p {
-    font-weight: bold;
-    font-size: 15px;
-  }
-
-  .grid-shop div h1 {
-    font-weight: bolder;
-    font-size: 30px;
-  }
-
-  .grid-shopProducts {
-    width: 250px;
-    height: 290px;
-  }
-
-  .flex-RegisterContainer {
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: #dddad5;
   }
 
   .forms {
@@ -560,6 +506,11 @@ a {
     text-align: left;
     color: black;
     border: 2px solid black;
+    margin: 16px 32px 16px 32px;
+  }
+
+  .forms div {
+    margin-bottom: 4px;
   }
 
   .formsButtons {
@@ -588,25 +539,21 @@ a {
     background-color: white;
   }
 
-  html,
-  footer a {
-    color: black;
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
-  }
-  .localesContent {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #f8f6f4;
-    justify-content: left;
-    align-items: center;
-  }
-
   .imgLocales {
     height: 400px;
     width: 400px;
+    margin: 16px 32px 16px 32px;
+  }
+
+  .grid-shopProducts {
+    width: 150px;
+    height: 150px;
+    margin: 8px 16px 8px 16px;
+  }
+
+  .table-margin {
+    margin: 8px 16px 8px 16px;
+    padding: 4px 8px 4px 8px;
   }
 
   .localNames {
@@ -616,24 +563,19 @@ a {
     font-weight: 400;
   }
 
-  .tableDays,
-  th,
-  td {
-    /* Bordes de renglones de tablas */
-    width: 25%;
-    text-align: left;
-    vertical-align: top;
-    border: 5px solid #e6e6e6;
+  .redes {
+    width: 35px;
+    height: 35px;
+    margin: 8px 8px 8px 8px;
   }
 
-  .footerContent {
-    background-color: #e6e6e6;
-    display: inline-flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    height: 15%;
+  footer {
+    font-size: 17px;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: black;
   }
 }
 
@@ -647,6 +589,14 @@ a {
     font-family: "Sen", sans-serif;
   }
 
+  .bg-grey {
+    background-color: #d8d8d8;
+  }
+
+  .bg-lightGrey {
+    background-color: #e6e6e6;
+  }
+
   .bg-home {
     background-image: url(./IMG/hdbg3.jpg);
     background-repeat: no-repeat;
@@ -727,10 +677,11 @@ a {
     font-weight: bolder;
   }
 
-  .div-text p {
-    font-size: 40px;
+  .big-text {
+    font-size: 20px;
     font-weight: 100;
     font-style: italic;
+    margin: 32px 32px 48px 48px;
   }
 
   .font-sent {
@@ -764,87 +715,41 @@ a {
     margin: 0 50px;
   }
 
-  .iframe-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #d8d8d8;
-    font-weight: bolder;
-    font-size: 40px;
-    width: 100%;
-    height: 500px;
-  }
   .iframe {
     width: 700px;
     height: 350px;
   }
 
-  .grid-iconsHome {
-    /*muebles y texto - desktop */
-    background-color: #d8d8d8;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr;
-
-    padding: 30px;
-    font-size: 25px;
-    font-weight: 400;
+  .iframeTittle {
+    font-size: 50px;
     color: black;
-    text-align: center;
-    border: none;
-    width: 100%;
-    height: 50%;
-  }
-
-  .grid-iconsHome img {
-    height: 100px;
-    width: 100px;
-  }
-
-  .grid-shop {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70px 500px 500px;
-    align-items: stretch;
-    justify-content: center;
-    text-align: center;
-    color: black;
-    font-weight: 400;
-    background-color: #d8d8d8;
-    padding: 8px 16px;
-  }
-
-  .grid-shop div p {
     font-weight: bold;
-    font-size: 15px;
   }
 
-  .grid-shop div h1 {
-    font-weight: bolder;
-    font-size: 30px;
+  .furnitureIcons {
+    height: 150px;
+    width: 150px;
+    margin-top: 16px;
+    margin-bottom: 8px;
   }
 
-  .grid-shopProducts {
-    width: 250px;
-    height: 290px;
-  }
-
-  .flex-RegisterContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: #dddad5;
+  .furnitureIcons-text {
+    margin: 8px 8px 8px 8px;
+    font-size: 25px;
+    color: black;
   }
 
   .forms {
     background-color: #f8f6f4;
-    padding: 10px 45px 10px 45px;
+    margin: 32px 64px 32px 64px;
     text-align: left;
     color: black;
     border: 2px solid black;
+    font-size: 15px;
+  }
+
+  .forms div {
+    margin-bottom: 8px;
   }
 
   .formsButtons {
@@ -873,26 +778,21 @@ a {
     background-color: white;
   }
 
-  html,
-  footer a {
-    color: black;
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
+  .logInform {
+    width: 75%;
+    text-align: center;
   }
 
-  .localesContent {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #f8f6f4;
-    justify-content: left;
-    align-items: center;
+  .grid-shopProducts {
+    width: 200px;
+    height: 200px;
+    margin: 8px 16px 8px 16px;
   }
 
   .imgLocales {
     height: 400px;
     width: 400px;
+    margin: 16px 32px 16px 32px;
   }
 
   .localNames {
@@ -902,23 +802,23 @@ a {
     font-weight: 400;
   }
 
-  .tableDays,
-  th,
-  td {
-    /* Bordes de renglones de tablas */
-    width: 25%;
-    text-align: left;
-    vertical-align: top;
-    border: 5px solid #e6e6e6;
+  .table-margin {
+    margin: 8px 16px 8px 16px;
+    padding: 4px 8px 4px 8px;
   }
 
-  .footerContent {
-    background-color: #e6e6e6;
-    display: inline-flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    height: 15%;
+  .redes {
+    width: 40px;
+    height: 40px;
+    margin: 8px 8px 8px 8px;
+  }
+
+  footer {
+    font-size: 20px;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: black;
   }
 }
