@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROMA&CO</title>
+    <title>Roma&CO. | Registro. </title>
+    <meta name="description" content="Sumate a nuestra comunidad y disfrutá de nuestras promos en muebles, servicio para tus eventos, y decoración para tu hogar. También obtendrás descuentos en tienda online">
+    <meta name="Keywords" content="Tienda, Muebles, Sillones, Decoración, Eventos, Alfombras, Cortinas, Lámparas, Servicio, Hogar">
     <link rel="apple-touch-icon" sizes="57x57" href="../IMG/FAVICON/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../IMG/FAVICON/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../IMG/FAVICON/apple-icon-72x72.png">
@@ -24,27 +26,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
     <div class="bg-registro">
         <header>
+            <a href="../index.html" class="enlace">
+                <img src="../IMG/LOGO.svg" alt="" class="logo">
+            </a>
             <nav>
                 <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
+                <label for="check" class="checkbtn burgerButton">
                     <svg class="BarsIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
                     </svg> <!-- ICONO BARS -->
                 </label>
-                <a href="../index.html" class="enlace">
-                    <img src="../IMG/LOGO.svg" alt="" class="logo">
-                </a>
-                <ul class="Menu-list">
-                    <li><a class="active" href="./Registro.html">Registro</a></li>
-                    <li><a href="./Tienda.html">Tienda</a></li>
-                    <li><a href="./Locales.html">Locales</a></li>
-                    <li><a href="./Servicios.html">Servicios</a></li>
+                <ul class="menu">
+                    <li><a class="active" href="../Pag/Registro.html">Registro</a></li>
+                    <li><a href="../Pag/Tienda.html">Tienda</a></li>
+                    <li><a href="../Pag/Locales.html">Locales</a></li>
+                    <li><a href="../Pag/Servicios.html">Servicios</a></li>
                 </ul>
             </nav>
         </header>
@@ -54,9 +56,6 @@
             <h1 class="font-abril tittleAnimation">¿Ya formas parte de nosotros?</h1>
             <p class="font-sent big-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Odio perferendis sed et aut nostrum suscipit earum
-                commodi, velit incidunt hic neque iure, adipisci ea.
-                Quisquam facere amet tenetur vel?
             </p>
         </div>
     </div>
@@ -66,57 +65,60 @@
             <div class="col-xl-6">
                 <form class="forms font-sent" action="" method="post">
                     <label for="Titulo">
-                        <h1 class="forms-tittle">Sumate a nuestra comunidad!</h1>
+                        <h2 class="forms-tittle">¡Sumate a nuestra comunidad!</h2>
                     </label>
 
 
                     <div>
-                        <label for="Nombre">Nombre</label>
+                        <label for="Nombre">Nombre:</label>
                         <input class="formInput" type="text" name="Nombre" />
                     </div>
 
                     <div>
-                        <label for="Apellido">Apellido</label>
+                        <label for="Apellido">Apellido:</label>
                         <input class="formInput" type="text" name="Apellido" />
                     </div>
 
                     <div>
-                        <label for="Genero">Genero</label>
-                        <div>Masculino</div>
-                        <input class="formInput" type="radio" name="Genero" value="Masculino" />
-                        <div>Femenino</div>
-                        <input class="formInput" type="radio" name="Genero" value="Femenino" />
-                        <div>Sin Genero</div>
-                        <input class="formInput" type="radio" name="Genero" value="NoGender" />
+                        <label for="Genero">Género:</label>
+                        <div>Masculino
+                            <input class="formInput" type="radio" name="Genero" value="Masculino" />
+                        </div>
+                        <div>Femenino
+                            <input class="formInput" type="radio" name="Genero" value="Femenino" />
+                        </div>
+                        <div>Sin Genero
+                            <input class="formInput" type="radio" name="Genero" value="NoGender" />
+                        </div>
                     </div>
 
                     <div>
-                        <label for="Email">Email</label>
+                        <label for="Email">Email:</label>
                         <input class="formInput" type="email" name="Email" />
                     </div>
 
                     <div>
-                        <label for="Telefono">Telefono</label>
+                        <label for="Telefono">Teléfono:</label>
                         <input class="formInput" type="number" name="Telefono" />
                     </div>
 
                     <div>
-                        <label for="Fecha de Nacimiento">Fecha de Nacimiento</label>
+                        <label for="Fecha de Nacimiento">Fecha de Nacimiento:</label>
                         <input class="formInput" type="date" name="Fecha de Nacimiento" />
                     </div>
 
                     <div>
-                        <label for="Contraseña">Contraseña</label>
+                        <label for="Contraseña">Contraseña:</label>
                         <input class="formInput" type="password" name="Contraseña" />
                     </div>
 
                     <div>
-                        <label for="Contraseña">Repita la Contraseña</label>
+                        <label for="Contraseña">Repita la Contraseña:</label>
                         <input class="formInput" type="password" name="Contraseña" />
                     </div>
 
                     <div>
-                        <p>Acepta los Terminos y Condiciones</p>
+                        Acepta los Terminos y Condiciones
                         <input class="formInput" type="checkbox" name="Acepta" value="1" />
                     </div>
 
@@ -129,14 +131,14 @@
 
             <div class="col-xl-6">
                 <form class="forms font-sent logInform" action="" method="post">
-                    <h2 class="forms-tittle">O iniciá sesión...</h2>
+                    <h3 class="forms-tittle">O iniciá sesión...</h3>
                     <div>
-                        <label for="Email">Email</label>
+                        <label for="Email">Email:</label>
                         <input class="formInput" type="email" name="Email" />
                     </div>
 
                     <div>
-                        <label for="Contraseña">Contraseña</label>
+                        <label for="Contraseña">Contraseña:</label>
                         <input class="formInput" type="password" name="Contraseña" />
                     </div>
 
@@ -149,22 +151,28 @@
     </div>
     <footer class="container-fluid font-sent text-center bg-lightGrey">
         <div class="row">
-            <div class="col-4">
+            <div class="col-3">
                 <a target="_blank" tittle="Facebook" href="https://fb.com/">
                     <img class="redes" src="../IMG/fb.svg" alt="Facebook" />
                     <p>Seguinos en Facebook!</p>
                 </a>
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <a target="_blank" title="Instagram" href="https://www.instagram.com/">
                     <img class="redes" src="../IMG/insta.svg" alt="Instagram" />
                     <p>Seguinos en Instagram!</p>
                 </a>
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <a target="_blank" title="WhatsApp" href="https://web.whatsapp.com/">
                     <img class="redes" src="../IMG/wpp.svg" alt="WhatsApp" />
-                    <p>Contactate con Nosotros!</p>
+                    <p>Contactate con nosotros!</p>
+                </a>
+            </div>
+            <div class="col-3">
+                <a target="_blank" title="Twitter" href="https://twitter.com/">
+                    <img class="redes" src="../IMG/tw.svg" alt="Twitter" />
+                    <p>Seguinos en Twitter</p>
                 </a>
             </div>
         </div>
