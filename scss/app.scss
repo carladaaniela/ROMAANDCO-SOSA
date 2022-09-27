@@ -19,11 +19,11 @@ body {
 }
 
 .bg-grey {
-  background-color: $second-color;
+  background-color: map-get($colors, second);
 }
 
 .bg-lightGrey {
-  background-color: $first-color;
+  background-color: map-get($colors, first);
 }
 
 .font-abril {
@@ -50,7 +50,7 @@ body {
 }
 
 .bg-grey {
-  background-color: #d8d8d8;
+  background-color: map-get($colors, second);
 }
 
 .bg-lightGrey {
@@ -77,8 +77,7 @@ body {
   }
 }
 
-.bg-home {
-  background-image: url(../IMG/bg/hdbg3.jpg);
+.bg-header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -86,50 +85,31 @@ body {
   width: 100%;
   height: 100%;
   filter: grayscale(100);
+}
+
+.bg-home {
+  background-image: url(../IMG/bg/hdbg3.jpg);
+  @extend .bg-header;
 }
 
 .bg-shop {
   background-image: url(../IMG/bg/hdbg2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(100);
+  @extend .bg-header;
 }
 
 .bg-locales {
   background-image: url(../IMG/bg/hdbg6.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(100);
+  @extend .bg-header;
 }
 
 .bg-servicios {
   background-image: url(../IMG/bg/hdbg7.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(100);
+  @extend .bg-header;
 }
 
 .bg-registro {
   background-image: url(../IMG/bg/hdbg1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(100);
+  @extend .bg-header;
 }
 
 .div-text {
@@ -153,7 +133,7 @@ body {
     margin-bottom: 4px;
     margin-left: 16px;
     margin-right: 16px;
-    color: black;
+    color: map-get($colors, fifth);
     font-style: italic;
   }
 }
@@ -189,7 +169,7 @@ header {
         line-height: 30px; /*espacion entre elementos */
 
         a {
-          color: black;
+          color: map-get($colors, fifth);
           font-size: 20px;
           padding: 7px 13px; /* arriba y abajo 7, izq y derecha 13*/
           border-radius: 4px;
@@ -226,7 +206,7 @@ li a.active {
   width: 40px;
   height: 40px;
   margin-bottom: 16px;
-  color: black;
+  color: map-get($colors, fifth);
 }
 
 .checkbtn {
@@ -251,7 +231,7 @@ li a.active {
 .furnitureIcons-text {
   margin: 8px 8px;
   font-size: 10px;
-  color: black;
+  color: map-get($colors, fifth);
   font-weight: 100;
 }
 
@@ -262,7 +242,7 @@ li a.active {
 
 .iframeTittle {
   font-size: 20px;
-  color: black;
+  color: map-get($colors, fifth);
   font-weight: bold;
 }
 
@@ -274,16 +254,16 @@ li a.active {
   align-items: center;
   width: 100%;
   height: 600px;
-  background-color: $first-color;
+  background-color: map-get($colors, first);
   padding: 8px 16px 8px 16px;
   box-sizing: border-box;
 }
 
 .forms {
-  background-color: $third-color;
+  background-color: map-get($colors, third);
   text-align: left;
-  color: black;
-  border: 1px solid black;
+  color: map-get($colors, fifth);
+  border: 1px solid map-get($colors, fifth);
   border-radius: 5px;
   font-size: 14px;
   padding: 8px 16px;
@@ -310,39 +290,36 @@ li a.active {
 
 .formsButtons {
   /* Botones Formularios */
-  color: black;
+  @include btn-style(center, 6px, 16px);
   background: transparent;
-  border: 2px solid black;
-  border-radius: 6px;
-  color: black;
+  border: 2px solid map-get($colors, fifth);
+  color: map-get($colors, fifth);
   padding: 8px 16px;
   text-align: center;
   display: inline-block;
   font-size: 12px;
-  margin-right: 16px;
   cursor: pointer;
   text-decoration: none;
-  background-color: $fourth-color;
-  color: black;
-  position: center;
-  transition: $fourth-color 0.5s;
+  background-color: map-get($colors, fourth);
+  color: map-get($colors, fifth);
+
+  transition: map-get($colors, fourth) 0.5s;
 }
 
 .formInput {
   margin: 4px 8px;
   height: 17px;
-  border: 1px solid black;
+  border: 1px solid map-get($colors, fifth);
 }
 
 .formsButtons:hover {
-  /* Cambio de color en boton de formulario*/
-  border-color: $fourth-color;
+  border-color: map-get($colors, fourth);
   background-color: white;
 }
 
 .imgLocales {
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   margin: 8px 16px;
 }
 
@@ -366,7 +343,7 @@ li a.active {
 .furnitureIcons-text {
   margin: 8px;
   font-size: 20px;
-  color: black;
+  color: map-get($colors, fifth);
 }
 
 .table-margin {
@@ -375,12 +352,6 @@ li a.active {
 }
 
 .locales {
-  .imgLocales {
-    height: 400px;
-    width: 400px;
-    padding: 8px 10px;
-  }
-
   .localNames {
     text-align: left;
     font-family: "Abril Fatface" !important;
@@ -407,7 +378,7 @@ footer {
         font-size: 12px;
         font-weight: 200;
         text-align: center;
-        color: black;
+        color: map-get($colors, fifth);
       }
     }
   }
@@ -451,6 +422,12 @@ footer {
     margin: 8px 16px;
   }
 
+  .imgLocales {
+    height: 400px;
+    width: 400px;
+    margin: 8px 16px;
+  }
+
   footer {
     padding: 4px 4px;
     a {
@@ -464,7 +441,7 @@ footer {
           font-size: 28px;
           font-weight: 200;
           text-align: center;
-          color: black;
+          color: map-get($colors, fifth);
         }
       }
     }
@@ -508,7 +485,7 @@ footer {
           margin: 0;
 
           a {
-            color: black;
+            color: map-get($colors, fifth);
             font-size: 25px;
             padding: 16px 32px;
           }
@@ -535,8 +512,7 @@ footer {
 
   .formsButtons {
     &:hover {
-      /*Cambio color bot formulario */
-      border-color: black;
+      border-color: map-get($colors, fifth);
       background-color: white;
     }
   }

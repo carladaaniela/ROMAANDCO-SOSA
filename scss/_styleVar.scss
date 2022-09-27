@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
 
-$first-color: #e6e6e6;
-$second-color: #d9d9d9;
-$third-color: #fdf8fa;
-$fourth-color: #9a7aa0;
-$fifth-color: #353535;
+$colors: (
+  first: #e6e6e6,
+  second: #d9d9d9,
+  third: #fdf8fa,
+  fourth: #9a7aa0,
+  fifth: #353535,
+);
+
+@mixin btn-style($position, $border-radius, $margin-right) {
+  position: $position;
+  border-radius: $border-radius;
+  margin-right: $margin-right;
+}
+
 $font-abril: "Abril Fatface", cursive;
 $font-sent: "Sen", sans-serif;
