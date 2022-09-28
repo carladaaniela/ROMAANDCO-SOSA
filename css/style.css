@@ -41,7 +41,7 @@ body {
   margin: 32px 48px; }
 
 .bg-grey {
-  background-color: #d8d8d8; }
+  background-color: #d9d9d9; }
 
 .bg-lightGrey {
   background-color: #e6e6e6; }
@@ -61,8 +61,7 @@ body {
   100% {
     transform: scale(1.25, 1.25); } }
 
-.bg-home {
-  background-image: url(../IMG/bg/hdbg3.jpg);
+.bg-header, .bg-home, .bg-shop, .bg-locales, .bg-servicios, .bg-registro {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -70,46 +69,21 @@ body {
   width: 100%;
   height: 100%;
   filter: grayscale(100); }
+
+.bg-home {
+  background-image: url(../IMG/bg/hdbg3.jpg); }
 
 .bg-shop {
-  background-image: url(../IMG/bg/hdbg2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(100); }
+  background-image: url(../IMG/bg/hdbg2.jpg); }
 
 .bg-locales {
-  background-image: url(../IMG/bg/hdbg6.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(100); }
+  background-image: url(../IMG/bg/hdbg6.jpg); }
 
 .bg-servicios {
-  background-image: url(../IMG/bg/hdbg7.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(100); }
+  background-image: url(../IMG/bg/hdbg7.jpg); }
 
 .bg-registro {
-  background-image: url(../IMG/bg/hdbg1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(100); }
+  background-image: url(../IMG/bg/hdbg1.jpg); }
 
 .div-text {
   display: flex;
@@ -129,7 +103,7 @@ body {
     margin-bottom: 4px;
     margin-left: 16px;
     margin-right: 16px;
-    color: black;
+    color: #353535;
     font-style: italic; }
 
 header {
@@ -160,7 +134,7 @@ header {
         line-height: 30px;
         /*espacion entre elementos */ }
         header nav .menu > li a {
-          color: black;
+          color: #353535;
           font-size: 20px;
           padding: 7px 13px;
           /* arriba y abajo 7, izq y derecha 13*/
@@ -190,7 +164,7 @@ li a.active {
   width: 40px;
   height: 40px;
   margin-bottom: 16px;
-  color: black; }
+  color: #353535; }
 
 .checkbtn {
   float: right;
@@ -211,7 +185,7 @@ li a.active {
 .furnitureIcons-text {
   margin: 8px 8px;
   font-size: 10px;
-  color: black;
+  color: #353535;
   font-weight: 100; }
 
 .iframe {
@@ -220,7 +194,7 @@ li a.active {
 
 .iframeTittle {
   font-size: 20px;
-  color: black;
+  color: #353535;
   font-weight: bold; }
 
 .flex-RegisterContainer {
@@ -238,8 +212,8 @@ li a.active {
 .forms {
   background-color: #fdf8fa;
   text-align: left;
-  color: black;
-  border: 1px solid black;
+  color: #353535;
+  border: 1px solid #353535;
   border-radius: 5px;
   font-size: 14px;
   padding: 8px 16px;
@@ -258,36 +232,34 @@ li a.active {
 
 .formsButtons {
   /* Botones Formularios */
-  color: black;
-  background: transparent;
-  border: 2px solid black;
+  position: center;
   border-radius: 6px;
-  color: black;
+  margin-right: 16px;
+  background: transparent;
+  border: 2px solid #353535;
+  color: #353535;
   padding: 8px 16px;
   text-align: center;
   display: inline-block;
   font-size: 12px;
-  margin-right: 16px;
   cursor: pointer;
   text-decoration: none;
   background-color: #9a7aa0;
-  color: black;
-  position: center;
+  color: #353535;
   transition: #9a7aa0 0.5s; }
 
 .formInput {
   margin: 4px 8px;
   height: 17px;
-  border: 1px solid black; }
+  border: 1px solid #353535; }
 
 .formsButtons:hover {
-  /* Cambio de color en boton de formulario*/
   border-color: #9a7aa0;
   background-color: white; }
 
 .imgLocales {
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   margin: 8px 16px; }
 
 .table-mobile {
@@ -307,16 +279,11 @@ li a.active {
 .furnitureIcons-text {
   margin: 8px;
   font-size: 20px;
-  color: black; }
+  color: #353535; }
 
 .table-margin {
   margin: 8px 16px;
   padding: 4px 8px; }
-
-.locales .imgLocales {
-  height: 400px;
-  width: 400px;
-  padding: 8px 10px; }
 
 .locales .localNames {
   text-align: left;
@@ -341,7 +308,7 @@ footer {
         font-size: 12px;
         font-weight: 200;
         text-align: center;
-        color: black; }
+        color: #353535; }
 
 /*tablet */
 @media screen and (min-width: 768px) {
@@ -370,6 +337,10 @@ footer {
     width: 250px;
     height: 300px;
     margin: 8px 16px; }
+  .imgLocales {
+    height: 400px;
+    width: 400px;
+    margin: 8px 16px; }
   footer {
     padding: 4px 4px; }
     footer a {
@@ -383,7 +354,7 @@ footer {
           font-size: 28px;
           font-weight: 200;
           text-align: center;
-          color: black; } }
+          color: #353535; } }
 
 /*desktop*/
 @media screen and (min-width: 1200px) {
@@ -408,7 +379,7 @@ footer {
         display: inline;
         margin: 0; }
         header nav .menu > li a {
-          color: black;
+          color: #353535;
           font-size: 25px;
           padding: 16px 32px; }
   .forms {
@@ -423,8 +394,7 @@ footer {
       height: 20px;
       font-size: 15px; }
   .formsButtons:hover {
-    /*Cambio color bot formulario */
-    border-color: black;
+    border-color: #353535;
     background-color: white; }
   .logInform {
     width: 75%;
